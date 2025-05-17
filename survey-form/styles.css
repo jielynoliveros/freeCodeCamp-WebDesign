@@ -1,0 +1,86 @@
+body{
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-image: linear-gradient(44.8deg, rgba(255, 136, 102, 0.67) -53.1%, rgba(255, 221, 136, 0.28) 49%);
+  color: black;
+  font-family: Poppins, Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+h1, p {
+  margin: 1.5em auto;
+  text-align: center;
+}
+
+form {
+  width: 80vw;
+  max-width: 600px;
+  min-width: 400px;
+  margin: 0 auto;
+  border: solid 2px rgb(85, 85, 85);
+  border-radius: 2rem;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+fieldset {
+  border:none;
+  padding: 0.5em 0;
+}
+
+label {
+  display: block;
+  margin: 0.5em 2.5em;
+  padding: 0;
+}
+
+legend {
+  margin: 0 2.2em 0;
+  padding-top: 0.5em;
+}
+
+input, textarea, select {
+  margin: 10px 10px 0 0;
+  width: 100%;
+  min-height: 1.5em;
+  font-family: Poppins, Sans-serif;
+  font-size: 16px;
+}
+
+input[name="recommend"], input[name="favorites"] {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+}
+#number, #dropdown, #number-label, #gender {
+  width: 200px;
+  display: inline-block;
+}
+#dropdown, #gender {
+  padding: 5px 2px;
+  cursor:pointer;
+}
+button {
+  width: 200px;
+  min-height: 2.5em;
+  background-color: #e78a99;
+  border-radius: 2rem;
+  border: solid 2px #e78a99;
+  cursor: pointer;
+  margin: 1em 2em;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+button:hover {
+  background-color: #ec677d;
+  border:solid 2px #ec677d;
+}
+
+#favorites {
+  padding: 0;
+}

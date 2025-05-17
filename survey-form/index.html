@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Customer Feedback Survey</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1 id="title">Customer Feedback Survey</h1>
+  <p id="description">Please let us know about your experience with our product and service.
+  </p>
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label">Full Name: <input id="name" type="text" placeholder="Enter Your Name" required/></label>
+      <label id="email-label">Email: <input id="email" type="email" placeholder="Enter Your Email" required/></label>
+      <label id="number-label">Age: <input id="number" type="number" min="18" max="80" placeholder="Enter Your Age" required/></label>
+      <label for="dropdown" id="gender">Gender: 
+      <select id="dropdown">
+        <option value="">(select option)</option>
+        <option value="1">Male</option>
+        <option value="2">Female</option>
+        <option value="2">Prefer not to respond</option>
+    </select>
+    </label>
+      <fieldset>
+        <legend>Would you recommend us to your colleagues and friends?</legend>
+        <label for="radio-yes">
+          <input id="yes" type="radio" name="recommend"  value="Yes"checked /> Yes</label>
+        <label for="radio-no">
+          <input id="no" type="radio" name="recommend"  value="No"/> No</label>
+      </fieldset>
+      <fieldset id="favorites">
+        <legend>What are your favorites?</legend>
+        <label for="Food & Drinks">
+        <input type="checkbox" id="food-drink" value="Food & Drinks" name="favorites"> Food & Drinks</input></label>
+        <label for="Ambiance">
+        <input type="checkbox" id="ambiance" value="Ambiance" name="favorites"> Ambiance</input></label>
+        <label for="Friendly Staff">
+        <input type="checkbox" id="friendly-staff" value="Friendly Staff" name="favorites"> Friendly Staff</input></label>
+        <label for="Cleanliness">
+        <input type="checkbox" id="" value="Cleanliness" name="favorites"> Cleanliness</input>
+    </label>
+      </fieldset>
+      <label for ="suggestions">Do you have suggestions to improve our products and services?
+      <textarea id="suggestions" rows="5" cols="50" placeholder="Write your suggestions here..."></textarea>
+    </label>
+      <button type="submit" id="submit" value="Submit">Submit</button>
+    </fieldset>
+  </form>
+</body>
+</html>
+
